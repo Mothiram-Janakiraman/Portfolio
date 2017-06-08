@@ -1,0 +1,30 @@
+.navbar-custom {
+    background: #fff;
+    margin:0;
+    .mainlinks li{
+       margin-left:30px; 
+        a {
+            font-family:'josefin_sansregular';
+            font-size: 18px;
+        }
+    }
+    a.navbar-brand {
+        font-family: 'josefin_sansbold';
+        text-transform: uppercase;
+    }
+}
+
+
+.social-links{
+    li {
+        margin-top: 10px;;
+        a{
+            padding: 5px;
+           img {
+            width:25px;
+        }  
+        }
+       
+    }
+}
+    

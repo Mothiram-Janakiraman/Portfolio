@@ -1,0 +1,28 @@
+/*
+  Portfolio of Mothiram J
+  Version: 0.0.1
+  Author: Self
+*/
+
+/*  BASE Styles - variables, mixins, etc., */
+
+@import 'base/_variables.scss';
+@import 'base/_normalize.scss';
+@import 'base/_mixins.scss';
+@import 'base/_base.scss';
+
+/*  Layout Styles - header, footer, navigations */
+
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_nav.scss';
+
+/*   Modules Styles - components, typography, buttons, sections */
+
+@import 'modules/_typography.scss';
+@import 'modules/_components.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_sections.scss';
+
+

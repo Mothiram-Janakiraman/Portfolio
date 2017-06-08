@@ -1,0 +1,814 @@
+/*
+  Portfolio of Mothiram J
+  Version: 0.0.1
+  Author: Self
+*/
+/*  BASE Styles - variables, mixins, etc., */
+/* Variables */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, ../scss/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, ../scss/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, ../scss/base/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, ../scss/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, ../scss/base/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, ../scss/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, ../scss/base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, ../scss/base/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, ../scss/base/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, ../scss/base/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, ../scss/base/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, ../scss/base/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, ../scss/base/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, ../scss/base/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, ../scss/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, ../scss/base/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, ../scss/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, ../scss/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 199, ../scss/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 203, ../scss/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, ../scss/base/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, ../scss/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, ../scss/base/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, ../scss/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, ../scss/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, ../scss/base/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, ../scss/base/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, ../scss/base/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, ../scss/base/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, ../scss/base/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, ../scss/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, ../scss/base/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, ../scss/base/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, ../scss/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, ../scss/base/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, ../scss/base/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, ../scss/base/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, ../scss/base/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, ../scss/base/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, ../scss/base/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, ../scss/base/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, ../scss/base/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, ../scss/base/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, ../scss/base/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../scss/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 5, ../scss/base/_base.scss */
+ul {
+  list-style: none;
+}
+
+/* line 8, ../scss/base/_base.scss */
+.breathing-space {
+  margin: 30px 0;
+}
+
+/* line 12, ../scss/base/_base.scss */
+.cellpadding {
+  border: 1px solid #e7e7e7;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 18, ../scss/base/_base.scss */
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/* Hovering effect for the portfolio images */
+/* line 26, ../scss/base/_base.scss */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+/* line 34, ../scss/base/_base.scss */
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+/* line 42, ../scss/base/_base.scss */
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 48, ../scss/base/_base.scss */
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 56, ../scss/base/_base.scss */
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+/* line 67, ../scss/base/_base.scss */
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 77, ../scss/base/_base.scss */
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+/* line 81, ../scss/base/_base.scss */
+.hovercmneffect, .hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+}
+
+/* line 92, ../scss/base/_base.scss */
+.hovereffect a.info {
+  text-transform: uppercase;
+  background-color: #555;
+}
+
+/* line 104, ../scss/base/_base.scss */
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/*  Layout Styles - header, footer, navigations */
+/* line 1, ../scss/layout/_nav.scss */
+.navbar-custom {
+  background: #fff;
+  margin: 0;
+}
+/* line 4, ../scss/layout/_nav.scss */
+.navbar-custom .mainlinks li {
+  margin-left: 30px;
+}
+/* line 6, ../scss/layout/_nav.scss */
+.navbar-custom .mainlinks li a {
+  font-family: 'josefin_sansregular';
+  font-size: 18px;
+}
+/* line 11, ../scss/layout/_nav.scss */
+.navbar-custom a.navbar-brand {
+  font-family: 'josefin_sansbold';
+  text-transform: uppercase;
+}
+
+/* line 19, ../scss/layout/_nav.scss */
+.social-links li {
+  margin-top: 10px;
+}
+/* line 21, ../scss/layout/_nav.scss */
+.social-links li a {
+  padding: 5px;
+}
+/* line 23, ../scss/layout/_nav.scss */
+.social-links li a img {
+  width: 25px;
+}
+
+/*   Modules Styles - components, typography, buttons, sections */
+/* Generated by Font Squirrel (https://www.fontsquirrel.com) on December 21, 2016 */
+@font-face {
+  font-family: 'josefin_sansbold';
+  src: url("../fonts/josefinsans-bold-webfont.woff2") format("woff2"), url("../fonts/josefinsans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sansbold_italic';
+  src: url("../fonts/josefinsans-bolditalic-webfont.woff2") format("woff2"), url("../fonts/josefinsans-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sansregular';
+  src: url("../fonts/josefinsans-italic-webfont.woff2") format("woff2"), url("../fonts/josefinsans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sanslight';
+  src: url("../fonts/josefinsans-light-webfont.woff2") format("woff2"), url("../fonts/josefinsans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sanslight_italic';
+  src: url("../fonts/josefinsans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/josefinsans-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sansregular';
+  src: url("../fonts/josefinsans-regular-webfont.woff2") format("woff2"), url("../fonts/josefinsans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sanssemibold';
+  src: url("../fonts/josefinsans-semibold-webfont.woff2") format("woff2"), url("../fonts/josefinsans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sanssemibold';
+  src: url("../fonts/josefinsans-semibolditalic-webfont.woff2") format("woff2"), url("../fonts/josefinsans-semibolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sansthin';
+  src: url("../fonts/josefinsans-thin-webfont.woff2") format("woff2"), url("../fonts/josefinsans-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'josefin_sansthin';
+  src: url("../fonts/josefinsans-thinitalic-webfont.woff2") format("woff2"), url("../fonts/josefinsans-thinitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Sections */
+/* line 2, ../scss/modules/_sections.scss */
+.para {
+  font-family: 'josefin_sansregular';
+  font-size: 1.5vw;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+/* line 9, ../scss/modules/_sections.scss */
+.heading {
+  font-family: 'josefin_sansbold';
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+}
+
+/* line 15, ../scss/modules/_sections.scss */
+.homepage-bg {
+  background: url("../images/germany.jpg") no-repeat center center fixed;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+/* line 25, ../scss/modules/_sections.scss */
+.cover-heading {
+  border: 1px solid #fff;
+  width: 60%;
+  margin: 200px auto;
+  background: #363636;
+  padding: 15px;
+  opacity: 0.8;
+}
+
+/* line 33, ../scss/modules/_sections.scss */
+.showcase {
+  background-color: #f4f4f4;
+}
+/* line 35, ../scss/modules/_sections.scss */
+.showcase h1 {
+  font-size: 36px;
+  font-family: 'josefin_sanslight';
+}
+/* line 39, ../scss/modules/_sections.scss */
+.showcase p {
+  font-size: 18px;
+  color: #a4a4a4;
+  font-family: 'josefin_sansregular';
+  line-height: 1.8;
+}
+/* line 45, ../scss/modules/_sections.scss */
+.showcase .sub-heading {
+  text-align: center;
+}
+/* line 48, ../scss/modules/_sections.scss */
+.showcase .panel {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  border-color: #5097ee;
+}
+/* line 53, ../scss/modules/_sections.scss */
+.showcase .panel-body {
+  padding: 0;
+  background-color: #5097ee;
+  color: #fff;
+  text-align: center;
+  line-height: 43px;
+}
+/* line 59, ../scss/modules/_sections.scss */
+.showcase .panel-body img {
+  width: 45px;
+  float: left;
+}
+
+/* line 68, ../scss/modules/_sections.scss */
+.page-heading {
+  text-align: center;
+  font-size: 36px;
+  padding: 20px 0 0 0;
+  text-transform: uppercase;
+  font-family: 'josefin_sanslight';
+}
+
+/* line 75, ../scss/modules/_sections.scss */
+.divider {
+  margin: 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+/* line 80, ../scss/modules/_sections.scss */
+.portfolio {
+  background-color: #f4f4f4;
+}

@@ -1,0 +1,84 @@
+/* Sections */
+.para {
+	font-family:'josefin_sansregular';
+	font-size:1.5vw;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5em;
+	}
+.heading {
+       font-family:'josefin_sansbold';
+       text-align: center;
+       color: #fff;
+       font-size:34px;
+	   }
+.homepage-bg {
+    background: url("../images/germany.jpg") no-repeat center center fixed;
+    background-size:100%; 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.cover-heading {
+     border: 1px solid #fff;
+     width:60%;
+     margin:200px auto;
+     background:#363636;
+     padding: 15px;
+     opacity: 0.8;
+} 
+.showcase {
+       background-color:#f4f4f4;
+    h1{
+        font-size:$heading;
+        font-family: 'josefin_sanslight';
+    }
+    p{
+        font-size:$paragraph;
+        color: $text-color;
+        font-family:'josefin_sansregular';
+        line-height: 1.8;
+    }
+    .sub-heading {
+        text-align: center;
+    }
+    .panel{
+        @include border-radius(0px);
+        margin-bottom: 10px;
+        border-color:#5097ee;
+    }
+    .panel-body{
+        padding: $pad-nil;
+        background-color:#5097ee;
+        color: #fff;
+        text-align: center;
+        line-height: 43px;
+        img{
+            width: 45px;
+            float: left;
+        }
+    }
+
+    
+}
+
+.page-heading {
+    text-align: center;
+    font-size:$heading;
+    padding: 20px 0 0 0;
+    text-transform: uppercase;
+    font-family: 'josefin_sanslight';
+}
+.divider {
+    margin:$mar-nil;
+    border-bottom:1px solid #bdbdbd;
+}
+
+.portfolio {
+    background-color:#f4f4f4;
+}
+
+
