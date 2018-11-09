@@ -817,3 +817,15 @@ html {
 .portfolio {
   background-color: #f4f4f4;
 }
+
+@media only screen and (max-width: 768px) {
+  /* line 3, ../scss/modules/_mediaquery.scss */
+  .social-links {
+    display: inline-block;
+  }
+  /* line 5, ../scss/modules/_mediaquery.scss */
+  .social-links li {
+    display: inline-block;
+    margin: 0 15px 0 30px;
+  }
+}
