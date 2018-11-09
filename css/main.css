@@ -822,10 +822,11 @@ html {
   /* line 3, ../scss/modules/_mediaquery.scss */
   .social-links {
     display: inline-block;
+    margin-left: 30px;
   }
-  /* line 5, ../scss/modules/_mediaquery.scss */
+  /* line 6, ../scss/modules/_mediaquery.scss */
   .social-links li {
     display: inline-block;
-    margin: 0 15px 0 30px;
+    margin: 0 15px 0 0;
   }
 }
