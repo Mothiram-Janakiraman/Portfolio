@@ -96,7 +96,7 @@ portfolioApp.directive('colorbox', function() {
   };  
 });
 
-someApp.directive('isActiveNav', [ '$location', function($location) {
+portfolioApp.directive('isActiveNav', [ '$location', function($location) {
 return {
  restrict: 'A',
  link: function(scope, element) {
