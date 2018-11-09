@@ -498,37 +498,42 @@ template {
 }
 
 /* line 1, ../scss/base/_base.scss */
+header {
+  margin-bottom: 50px;
+}
+
+/* line 4, ../scss/base/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 
-/* line 5, ../scss/base/_base.scss */
+/* line 8, ../scss/base/_base.scss */
 ul {
   list-style: none;
 }
 
-/* line 8, ../scss/base/_base.scss */
+/* line 11, ../scss/base/_base.scss */
 .breathing-space {
   margin: 30px 0;
 }
 
-/* line 12, ../scss/base/_base.scss */
+/* line 15, ../scss/base/_base.scss */
 .cellpadding {
   border: 1px solid #e7e7e7;
   text-align: center;
   display: inline-block;
 }
 
-/* line 18, ../scss/base/_base.scss */
+/* line 21, ../scss/base/_base.scss */
 html {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
 /* Hovering effect for the portfolio images */
-/* line 26, ../scss/base/_base.scss */
+/* line 29, ../scss/base/_base.scss */
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -538,7 +543,7 @@ html {
   text-align: center;
   cursor: default;
 }
-/* line 34, ../scss/base/_base.scss */
+/* line 37, ../scss/base/_base.scss */
 .hovereffect .overlay {
   width: 100%;
   height: 100%;
@@ -547,14 +552,14 @@ html {
   top: 0;
   left: 0;
 }
-/* line 42, ../scss/base/_base.scss */
+/* line 45, ../scss/base/_base.scss */
 .hovereffect img {
   display: block;
   position: relative;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
-/* line 48, ../scss/base/_base.scss */
+/* line 51, ../scss/base/_base.scss */
 .hovereffect h2 {
   text-transform: uppercase;
   text-align: center;
@@ -563,7 +568,7 @@ html {
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
 }
-/* line 56, ../scss/base/_base.scss */
+/* line 59, ../scss/base/_base.scss */
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
@@ -573,7 +578,7 @@ html {
   background-color: transparent;
 }
 
-/* line 67, ../scss/base/_base.scss */
+/* line 70, ../scss/base/_base.scss */
 .hovereffect:hover img {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
   filter: grayscale(1) blur(3px);
@@ -583,12 +588,12 @@ html {
   transform: scale(1.2);
 }
 
-/* line 77, ../scss/base/_base.scss */
+/* line 80, ../scss/base/_base.scss */
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
 
-/* line 81, ../scss/base/_base.scss */
+/* line 84, ../scss/base/_base.scss */
 .hovercmneffect, .hovereffect a.info, .hovereffect h2 {
   -webkit-transform: scale(0.7);
   -ms-transform: scale(0.7);
@@ -600,13 +605,13 @@ html {
   color: #fff;
 }
 
-/* line 92, ../scss/base/_base.scss */
+/* line 95, ../scss/base/_base.scss */
 .hovereffect a.info {
   text-transform: uppercase;
   background-color: #555;
 }
 
-/* line 104, ../scss/base/_base.scss */
+/* line 107, ../scss/base/_base.scss */
 .hovereffect:hover a.info, .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
