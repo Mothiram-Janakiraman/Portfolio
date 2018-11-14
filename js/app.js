@@ -78,9 +78,45 @@ portfolioApp.controller('skillsController', ['$scope', '$log', function($scope, 
     
 }]);
 
-portfolioApp.controller('contactController', ['$scope', '$log', function($scope, $log) {
+portfolioApp.controller('contactController', ['$scope', '$log', '$http', function($scope, $log, $http) {
     
     $scope.name = 'contact';
+    $scope.result = 'hidden';
+    $scope.resultMessage = 'message';
+    $scope.contactDate;
+    $scope.submitButtonDisabled = false;
+    $scope.submitted = false;
+    $scope.submit = function(contactForm) {
+        console.log(contactForm);
+        $scope.submitted = true;
+        $scope.submitButtonDisabled = true;
+        if(contactForm.$valid) 
+        {
+            $http({
+                method: 'POST',
+                url: 'mywebsite.com/myform.php',
+                headers: {'Content-Type':'application/x-www-form-urlencoded'}
+            }).success(function (data)
+            {
+                if(data.success) {
+                    $scope.submitButtonDisabled = true;
+                    $scope.resultMessage = data.message;
+                    $scope.result = 'bg-success';
+                }
+                else {
+                    $scope.submitButtonDisabled = false;
+                    $scope.resultMessage = data.message;
+                    $scope.result = 'bg-danger';
+                }
+            });
+        }
+        else {
+            $scope.submitButtonDisabled = false;
+            $scope.resultMessage = 'failed to submit.';
+            $scope.result = 'bg-danger';
+        }
+    }
+
     
 }]);
 

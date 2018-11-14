@@ -6,9 +6,9 @@
               <hr/ class="divider">
           </div>
           <div class="contactContainer" data-ng-controller="contactController">
-          <form name="contactForm" validation data-ng-submit="submit(contactform)" method="post" action="" role="form">
+          <form name="contactform" validation data-ng-submit="submit(contactform)" method="post" action="" role="form">
             <div data-ng-hide="formError()">
-              {{errorMessage}}
+              {{resultMessage}}
             </div>
 		    <div class="com-md-12">
           <!-- USer Name-->
