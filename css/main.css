@@ -633,23 +633,24 @@ html {
 /* line 6, ../scss/layout/_nav.scss */
 .navbar-custom .mainlinks li a {
   font-family: 'josefin_sansregular';
-  font-size: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
-/* line 11, ../scss/layout/_nav.scss */
+/* line 12, ../scss/layout/_nav.scss */
 .navbar-custom a.navbar-brand {
   font-family: 'josefin_sansbold';
   text-transform: uppercase;
 }
 
-/* line 19, ../scss/layout/_nav.scss */
+/* line 20, ../scss/layout/_nav.scss */
 .social-links li {
   margin-top: 10px;
 }
-/* line 21, ../scss/layout/_nav.scss */
+/* line 22, ../scss/layout/_nav.scss */
 .social-links li a {
   padding: 5px;
 }
-/* line 23, ../scss/layout/_nav.scss */
+/* line 24, ../scss/layout/_nav.scss */
 .social-links li a img {
   width: 25px;
 }
