@@ -5,11 +5,27 @@
               <div class="page-heading">contact</div>
               <hr/ class="divider">
           </div>
-		  
-		  <div class="col-md-6">
-			<iframe src='contactform.php' frameborder='0' width='100%' height='600' allowtransparency='true'></iframe>
-		  </div>
-          
+          <form name="contactForm" validation>
+            <div data-ng-hide="formError()"></div>
+		    <div class="com-md-12">
+          <!-- USer Name-->
+          <div class="col-md-6">
+            <input type="text" name="name" data-ng-model="contactData.name" placeholder="Full Name" data-ng-minlength="3" required/>
+          </div>
+           <!-- USer Email-->
+          <div class="col-md-6">
+              <input type="email" name="email" data-ng-model="contactData.email" placeholder="Enter your email address here" data-ng-minlength="3" required/>
+          </div>
+          <!--User Message-->
+          <div class="col-md-12"> 
+            <textarea name="inputMessage" data-ng-model="contactData.message" rows="4" id="inputMessage" placeholder="Enter Message Here"></textarea>
+          </div>
+          <!--Submit Button-->
+          <div class="col-md-6">
+            <input type="submit" data-ng-disabled="submitButtonDisabled" data-ng-click="submitContactForm()" />
+          </div>
+        </div>
+      </form>
        </div>
    </div>    
 </section>
