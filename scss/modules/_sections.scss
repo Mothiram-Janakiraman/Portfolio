@@ -35,10 +35,10 @@
         font-family: 'josefin_sanslight';
     }
     p{
-        font-size:$paragraph;
+        font-size:$paragraph + 2px;
         color: $text-color;
         font-family:'josefin_sansregular';
-        line-height: 1.8;
+        line-height: 1.5;
     }
     .sub-heading {
         text-align: center;
