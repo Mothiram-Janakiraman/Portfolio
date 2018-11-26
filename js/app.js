@@ -86,11 +86,11 @@ portfolioApp.controller('contactController', ['$scope', '$log', '$http', functio
     $scope.contactDate;
     $scope.submitButtonDisabled = false;
     $scope.submitted = false;
-    $scope.submit = function(contactForm) {
-        console.log(contactForm);
+    $scope.submit = function(contactform) {
+        console.log(contactform);
         $scope.submitted = true;
         $scope.submitButtonDisabled = true;
-        if(contactForm.$valid) 
+        if(contactform.$valid) 
         {
             $http({
                 method: 'POST',

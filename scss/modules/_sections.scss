@@ -1,16 +1,18 @@
 /* Sections */
 .para {
 	font-family:'josefin_sansregular';
-	font-size:1.5vw;
+	font-size:2.5vw;
     text-align: center;
     color: #fff;
-    line-height: 1.5em;
+    line-height: 2.5em;
+    text-shadow: 1px 1px 2px rgb(49, 49, 49);
 	}
 .heading {
        font-family:'josefin_sansbold';
        text-align: center;
        color: #fff;
-       font-size:34px;
+       font-size:60px;
+       text-shadow: 1px 1px 2px rgb(76, 76, 76);
 	   }
 .homepage-bg {
     background: url("../images/germany.jpg") no-repeat center center fixed;
@@ -33,7 +35,7 @@
 .showcase {
        background-color:#f4f4f4;
     h1{
-        font-size:$heading;
+        font-size:$broad-heading;
         font-family: 'josefin_sanslight';
     }
     p{

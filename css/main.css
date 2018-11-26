@@ -721,21 +721,23 @@ html {
 /* line 2, ../scss/modules/_sections.scss */
 .para {
   font-family: 'josefin_sansregular';
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   text-align: center;
   color: #fff;
-  line-height: 1.5em;
+  line-height: 2.5em;
+  text-shadow: 1px 1px 2px #313131;
 }
 
-/* line 9, ../scss/modules/_sections.scss */
+/* line 10, ../scss/modules/_sections.scss */
 .heading {
   font-family: 'josefin_sansbold';
   text-align: center;
   color: #fff;
-  font-size: 34px;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px #4c4c4c;
 }
 
-/* line 15, ../scss/modules/_sections.scss */
+/* line 17, ../scss/modules/_sections.scss */
 .homepage-bg {
   background: url("../images/germany.jpg") no-repeat center center fixed;
   background-size: 100%;
@@ -747,7 +749,7 @@ html {
   z-index: -100;
 }
 
-/* line 25, ../scss/modules/_sections.scss */
+/* line 27, ../scss/modules/_sections.scss */
 .cover-heading {
   border: 1px solid #fff;
   width: 60%;
@@ -757,27 +759,27 @@ html {
   opacity: 0.8;
 }
 
-/* line 33, ../scss/modules/_sections.scss */
+/* line 35, ../scss/modules/_sections.scss */
 .showcase {
   background-color: #f4f4f4;
 }
-/* line 35, ../scss/modules/_sections.scss */
+/* line 37, ../scss/modules/_sections.scss */
 .showcase h1 {
-  font-size: 36px;
+  font-size: 60px;
   font-family: 'josefin_sanslight';
 }
-/* line 39, ../scss/modules/_sections.scss */
+/* line 41, ../scss/modules/_sections.scss */
 .showcase p {
   font-size: 18px;
   color: #a4a4a4;
   font-family: 'josefin_sansregular';
   line-height: 1.8;
 }
-/* line 45, ../scss/modules/_sections.scss */
+/* line 47, ../scss/modules/_sections.scss */
 .showcase .sub-heading {
   text-align: center;
 }
-/* line 48, ../scss/modules/_sections.scss */
+/* line 50, ../scss/modules/_sections.scss */
 .showcase .panel {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -785,7 +787,7 @@ html {
   margin-bottom: 10px;
   border-color: #5097ee;
 }
-/* line 53, ../scss/modules/_sections.scss */
+/* line 55, ../scss/modules/_sections.scss */
 .showcase .panel-body {
   padding: 0;
   background-color: #5097ee;
@@ -793,13 +795,13 @@ html {
   text-align: center;
   line-height: 43px;
 }
-/* line 59, ../scss/modules/_sections.scss */
+/* line 61, ../scss/modules/_sections.scss */
 .showcase .panel-body img {
   width: 45px;
   float: left;
 }
 
-/* line 68, ../scss/modules/_sections.scss */
+/* line 70, ../scss/modules/_sections.scss */
 .page-heading {
   text-align: center;
   font-size: 36px;
@@ -808,13 +810,13 @@ html {
   font-family: 'josefin_sanslight';
 }
 
-/* line 75, ../scss/modules/_sections.scss */
+/* line 77, ../scss/modules/_sections.scss */
 .divider {
   margin: 0;
   border-bottom: 1px solid #bdbdbd;
 }
 
-/* line 80, ../scss/modules/_sections.scss */
+/* line 82, ../scss/modules/_sections.scss */
 .portfolio {
   background-color: #f4f4f4;
 }

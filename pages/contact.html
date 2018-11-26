@@ -7,7 +7,7 @@
           </div>
           <div class="contactContainer" data-ng-controller="contactController">
           <form name="contactform" validation data-ng-submit="submit(contactform)" method="post" action="" role="form">
-            <div data-ng-hide="formError()">
+            <div data-ng-hide="formError()" data-ng-class="result">
               {{resultMessage}}
             </div>
 		    <div class="com-md-12">
