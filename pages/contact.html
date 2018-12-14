@@ -13,7 +13,6 @@
               {{resultMessage}}
             </div>
 			</div>
-		    <div class="com-md-12">
           <!-- USer Name-->
           <div class="col-md-8 col-xs-12">
             <input type="text" name="name" id="name" class="form-control field-styles" data-ng-model="contactData.name" placeholder="Full Name" data-ng-minlength="15" required/>
@@ -28,9 +27,8 @@
           </div>
           <!--Submit Button-->
           <div class="col-md-6">
-            <input type="button" class="btn btn-default" data-ng-disabled="submitButtonDisabled" data-ng-click="submit(contactform)" value="Send"/>
-          </div>
-        </div>
+            <input type="button" class="btn btn-default btn-common" data-ng-disabled="submitButtonDisabled" data-ng-click="submit(contactform)" value="Send"/>
+          </div>        
       </form>
 	  </div>
     </div>

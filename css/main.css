@@ -632,6 +632,12 @@ html {
   width: 50%;
 }
 
+/* line 123, ../scss/base/_base.scss */
+.btn-common {
+  margin: 15px 0;
+  width: 30%;
+}
+
 /*  Layout Styles - header, footer, navigations */
 /* line 1, ../scss/layout/_nav.scss */
 .navbar-custom {
