@@ -620,6 +620,18 @@ html {
   transform: scale(1);
 }
 
+/* line 115, ../scss/base/_base.scss */
+.field-styles {
+  margin: 15px 0;
+  width: 50%;
+  height: 35px;
+}
+
+/* line 120, ../scss/base/_base.scss */
+.textarea-style {
+  width: 50%;
+}
+
 /*  Layout Styles - header, footer, navigations */
 /* line 1, ../scss/layout/_nav.scss */
 .navbar-custom {
