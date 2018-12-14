@@ -738,6 +738,7 @@ html {
 /* line 2, ../scss/modules/_components.scss */
 .designer-needs h1 {
   font-size: 36px;
+  font-family: 'josefin_sanslight';
 }
 
 /* Sections */
