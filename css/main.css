@@ -735,6 +735,11 @@ html {
   font-weight: normal;
   font-style: normal;
 }
+/* line 2, ../scss/modules/_components.scss */
+.designer-needs h1 {
+  font-size: 36px;
+}
+
 /* Sections */
 /* line 2, ../scss/modules/_sections.scss */
 .para {
